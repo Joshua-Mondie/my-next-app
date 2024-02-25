@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "../../provider";
+import SideNavbar from "../components/SideNavbar";
+import Header from "@/components/Header";
+import React from "react"; // Import React
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Providers>
+        <body className={inter.className}>
+          <React.StrictMode>
+            {" "}
+            {/* Wrap your application with React StrictMode */}
+            <>
+              <Header />
+              <div className="flex w-full">
+                <SideNavbar />
+                <div className="w-full h-screen overflow-y-scroll">
+                  <main className="w-full md:w-[44rem] p-4">{children}</main>
+                </div>
+              </div>
+            </>
+          </React.StrictMode>
+        </body>
+      </Providers>
     </html>
   );
 }
