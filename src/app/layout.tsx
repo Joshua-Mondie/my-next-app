@@ -24,7 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <React.StrictMode>
             {" "}
-            {/* Wrap your application with React StrictMode */}
+            
             <>
               <Header />
               <div className="flex w-full">
