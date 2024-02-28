@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import favicon from "@/app/favicon.ico";
 import next from "../../public/vercel.svg";
-import { headerA } from "./componentfile";
+// import { headerA } from "./componentfile";
 import Link from "next/link";
 import { color } from "framer-motion";
 import { TbMenu } from "react-icons/tb";
@@ -53,7 +53,7 @@ const Header = () => {
                 <span className="text-4xl">
                   <AiOutlineClose />
                 </span>
-                <NavbarContent className="absolute  h-[40rem] grid  w-full gap-y-0 left-0 gap-x-20 items-center  mt-3 ">
+                {/* <NavbarContent className="absolute  h-[40rem] grid  w-full gap-y-0 left-0 gap-x-20 items-center  mt-3 ">
                   {headerA.map((header, index) => (
                     <NavbarMenuItem
                       key={index}
@@ -62,7 +62,7 @@ const Header = () => {
                       <Link href={header.Route}>{header.headerName}</Link>
                     </NavbarMenuItem>
                   ))}
-                </NavbarContent>
+                </NavbarContent> */}
               </div>
             ) : (
               <span className="text-4xl">
@@ -72,13 +72,13 @@ const Header = () => {
           </button>
         </NavbarContent>
 
-        <NavbarContent className=" gap-x-20  md:flex items-center hidden ">
+        {/* <NavbarContent className=" gap-x-20  md:flex items-center hidden ">
           {headerA.map((header, index) => (
             <NavbarMenuItem key={index} className="text-gray-300 list-none">
               <Link href={header.Route}>{header.headerName}</Link>
             </NavbarMenuItem>
           ))}
-        </NavbarContent>
+        </NavbarContent> */}
       </div>
     </Navbar>
   );

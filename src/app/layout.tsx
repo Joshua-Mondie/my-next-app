@@ -26,11 +26,11 @@ export default function RootLayout({
             {" "}
             
             <>
-              <Header />
+              {/* <Header /> */}
               <div className="flex w-full">
                 <SideNavbar />
-                <div className="w-full h-screen overflow-y-scroll">
-                  <main className="w-full md:w-[44rem] p-4">{children}</main>
+                <div className="w-full h-screen overflow-y-scroll bg-slate-50">
+                  <main className="w-full  p-4">{children}</main>
                 </div>
               </div>
             </>

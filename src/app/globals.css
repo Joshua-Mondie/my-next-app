@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
   background-color: black;
-}
+} */
 
 .svgImage {
   filter: brightness(0) invert(1);
@@ -16,6 +16,8 @@
   height: 60;
   border: 1px white;
 } */
+
+
 
 
 
